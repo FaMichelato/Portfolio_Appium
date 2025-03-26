@@ -1,0 +1,4 @@
+robotframework
+Appium-Python-Client
+robotframework-appiumlibrary
+PyYAML

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.12.0 on win32)" generated="20250326 17:09:41.027" rpa="false" schemaversion="4">
+<suite id="s1" name="Controls Test" source="C:\Users\fa_mi\Documents\Portfolio_Appium\tests\controls_test.robot">
+<test id="s1-t1" name="Validar Preenchimento na Tela Controls" line="27">
+<kw name="Abrir Aplicativo" type="SETUP">
+<kw name="Open Application" library="AppiumLibrary">
+<arg>${APPIUM_SERVER}</arg>
+<arg>platformName=${PLATFORM_NAME}</arg>
+<arg>platformVersion=${PLATFORM_VERSION}</arg>
+<arg>deviceName=${DEVICE_NAME}</arg>
+<arg>app=${APP_PATH}</arg>
+<arg>automationName=${AUTOMATION_NAME}</arg>
+<arg>autoGrantPermissions=true</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |
+| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<status status="PASS" starttime="20250326 17:09:41.257" endtime="20250326 17:09:46.911"/>
+</kw>
+<status status="PASS" starttime="20250326 17:09:41.257" endtime="20250326 17:09:46.911"/>
+</kw>
+<kw name="Abrir Tela Controls Light Theme" library="controls_page">
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<arg>//android.widget.TextView[@text="Views"]</arg>
+<arg>10s</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<msg timestamp="20250326 17:09:48.282" level="INFO">xpath criteria: //android.widget.TextView[@text="Views"]</msg>
+<status status="PASS" starttime="20250326 17:09:46.911" endtime="20250326 17:09:48.282"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>//android.widget.TextView[@text="Views"]</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20250326 17:09:48.283" level="INFO">Clicking element '//android.widget.TextView[@text="Views"]'.</msg>
+<msg timestamp="20250326 17:09:49.639" level="INFO">xpath criteria: //android.widget.TextView[@text="Views"]</msg>
+<status status="PASS" starttime="20250326 17:09:48.282" endtime="20250326 17:09:49.639"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<arg>//android.widget.TextView[@text="Controls"]</arg>
+<arg>10s</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<msg timestamp="20250326 17:09:49.707" level="INFO">xpath criteria: //android.widget.TextView[@text="Controls"]</msg>
+<status status="PASS" starttime="20250326 17:09:49.639" endtime="20250326 17:09:49.707"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>//android.widget.TextView[@text="Controls"]</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20250326 17:09:49.708" level="INFO">Clicking element '//android.widget.TextView[@text="Controls"]'.</msg>
+<msg timestamp="20250326 17:09:50.931" level="INFO">xpath criteria: //android.widget.TextView[@text="Controls"]</msg>
+<status status="PASS" starttime="20250326 17:09:49.707" endtime="20250326 17:09:50.931"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<arg>//android.widget.TextView[@text="1. Light Theme"]</arg>
+<arg>10s</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<msg timestamp="20250326 17:09:50.976" level="INFO">xpath criteria: //android.widget.TextView[@text="1. Light Theme"]</msg>
+<status status="PASS" starttime="20250326 17:09:50.932" endtime="20250326 17:09:50.976"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>//android.widget.TextView[@text="1. Light Theme"]</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20250326 17:09:50.977" level="INFO">Clicking element '//android.widget.TextView[@text="1. Light Theme"]'.</msg>
+<msg timestamp="20250326 17:09:52.154" level="INFO">xpath criteria: //android.widget.TextView[@text="1. Light Theme"]</msg>
+<status status="PASS" starttime="20250326 17:09:50.977" endtime="20250326 17:09:52.154"/>
+</kw>
+<status status="PASS" starttime="20250326 17:09:46.911" endtime="20250326 17:09:52.154"/>
+</kw>
+<kw name="Preencher Formulario" library="controls_page">
+<kw name="Input Text" library="AppiumLibrary">
+<arg>//android.widget.EditText[@resource-id="io.appium.android.apis:id/edit"]</arg>
+<arg>Teste Appium</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<msg timestamp="20250326 17:09:52.156" level="INFO">Typing text 'Teste Appium' into text field '//android.widget.EditText[@resource-id="io.appium.android.apis:id/edit"]'</msg>
+<msg timestamp="20250326 17:09:52.242" level="INFO">xpath criteria: //android.widget.EditText[@resource-id="io.appium.android.apis:id/edit"]</msg>
+<status status="PASS" starttime="20250326 17:09:52.155" endtime="20250326 17:09:52.242"/>
+</kw>
+<kw name="Hide Keyboard" library="AppiumLibrary">
+<doc>Hides the software keyboard on the device. (optional) In iOS, use `key_name` to press
+a particular key, ex. `Done`. In Android, no parameters are used.</doc>
+<status status="PASS" starttime="20250326 17:09:52.243" endtime="20250326 17:09:52.671"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>//android.widget.CheckBox[@text="Checkbox 1"]</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20250326 17:09:52.672" level="INFO">Clicking element '//android.widget.CheckBox[@text="Checkbox 1"]'.</msg>
+<msg timestamp="20250326 17:09:53.287" level="INFO">xpath criteria: //android.widget.CheckBox[@text="Checkbox 1"]</msg>
+<status status="PASS" starttime="20250326 17:09:52.671" endtime="20250326 17:09:53.287"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>//android.widget.RadioButton[@text="RadioButton 1"]</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20250326 17:09:53.288" level="INFO">Clicking element '//android.widget.RadioButton[@text="RadioButton 1"]'.</msg>
+<msg timestamp="20250326 17:09:53.814" level="INFO">xpath criteria: //android.widget.RadioButton[@text="RadioButton 1"]</msg>
+<status status="PASS" starttime="20250326 17:09:53.287" endtime="20250326 17:09:53.814"/>
+</kw>
+<kw name="Swipe" library="AppiumLibrary">
+<arg>500</arg>
+<arg>1500</arg>
+<arg>500</arg>
+<arg>500</arg>
+<doc>Swipe from one point to another point, for an optional duration.</doc>
+<status status="PASS" starttime="20250326 17:09:53.814" endtime="20250326 17:09:55.127"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20250326 17:09:56.127" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20250326 17:09:55.127" endtime="20250326 17:09:56.127"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>//android.widget.Spinner</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20250326 17:09:56.128" level="INFO">Clicking element '//android.widget.Spinner'.</msg>
+<msg timestamp="20250326 17:09:56.206" level="INFO">xpath criteria: //android.widget.Spinner</msg>
+<status status="PASS" starttime="20250326 17:09:56.127" endtime="20250326 17:09:56.206"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<arg>//android.widget.CheckedTextView[@text="Mars"]</arg>
+<arg>5s</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<msg timestamp="20250326 17:09:56.330" level="INFO">xpath criteria: //android.widget.CheckedTextView[@text="Mars"]</msg>
+<status status="PASS" starttime="20250326 17:09:56.206" endtime="20250326 17:09:56.330"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>//android.widget.CheckedTextView[@text="Mars"]</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20250326 17:09:56.331" level="INFO">Clicking element '//android.widget.CheckedTextView[@text="Mars"]'.</msg>
+<msg timestamp="20250326 17:09:57.832" level="INFO">xpath criteria: //android.widget.CheckedTextView[@text="Mars"]</msg>
+<status status="PASS" starttime="20250326 17:09:56.330" endtime="20250326 17:09:57.832"/>
+</kw>
+<status status="PASS" starttime="20250326 17:09:52.155" endtime="20250326 17:09:57.832"/>
+</kw>
+<kw name="Fechar Aplicativo" type="TEARDOWN">
+<kw name="Close Application" library="AppiumLibrary">
+<doc>Closes the current application and also close webdriver session.</doc>
+<status status="PASS" starttime="20250326 17:09:57.833" endtime="20250326 17:09:58.279"/>
+</kw>
+<status status="PASS" starttime="20250326 17:09:57.832" endtime="20250326 17:09:58.280"/>
+</kw>
+<status status="PASS" starttime="20250326 17:09:41.256" endtime="20250326 17:09:58.280"/>
+</test>
+<status status="PASS" starttime="20250326 17:09:41.029" endtime="20250326 17:09:58.281"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Controls Test">Controls Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

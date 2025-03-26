@@ -1,0 +1,7 @@
+appiumServer: http://localhost:4723
+platformName: Android
+platformVersion: "8.1.0"             
+deviceName: emulator-5554        
+app: ${EXECDIR}/apk/ApiDemos-debug.apk
+automationName: UiAutomator2
+autoGrantPermissions: true
