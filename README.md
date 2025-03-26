@@ -2,7 +2,7 @@
 
 Este é um projeto de testes automatizados utilizando Appium com Robot Framework.
 
-Neste demostrativo realizo testes funcionais na tela de login e valido as funcionalidades da tela Admin.
+Neste demostrativo realizo testes funcionais na tela de acecibilidade e controles do aplicativo de teste https://github.com/appium-boneyard/sample-code/tree/master/sample-code/apps
 
 Lembrando que é uma amostra de como eu estruturo os testes e quais métodos utilizo!
 
