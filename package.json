@@ -1,0 +1,24 @@
+{
+  "name": "appium-tests",
+  "version": "1.0.0",
+  "description": "Este é um projeto de testes automatizados utilizando Appium com Robot Framework.",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "appium-start": "node start-appium.js",
+    "test": "robot tests/",
+    "test-with-appium": "npm run appium-start & npm run test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "appium": "^2.19.0",
+    "appium-uiautomator2-driver": "^4.2.3",
+    "chai": "^5.2.0",
+    "mocha": "^11.7.0",
+    "wd": "^1.14.0"
+  }
+}

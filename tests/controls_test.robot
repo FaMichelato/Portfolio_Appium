@@ -28,4 +28,5 @@ Validar Preenchimento na Tela Controls
     [Setup]    Abrir Aplicativo
     [Teardown]    Fechar Aplicativo
     Abrir Tela Controls Light Theme
+    Wait Until Element Is Visible    xpath=//android.widget.CheckBox[@text="Checkbox 1"]    10s
     Preencher Formulario
